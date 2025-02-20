@@ -1,0 +1,397 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0a0a23;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #121230;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    padding: 50px 20px;
+}
+
+.avatar {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #5500ff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar img:hover {
+    transform: scale(1.1);
+}
+
+.highlight {
+    color: #5500ff;
+}
+
+/* Estilos para a seção de projetos */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projetos {
+    padding: 20px 0;
+    background-color: #0a0a23;
+}
+
+#projetos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.projeto {
+    background: #1E1E2E;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #5500ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    position: relative;
+    padding-right: 35px;
+}
+
+.btn:hover {
+    background-color: #7a3bff;
+}
+
+.icone-github {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.imagens-projeto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.imagens-projeto img {
+    width: 23%;
+    padding: 1px;
+    border-radius: 5%;
+    box-shadow: 0 0 20px rgba(85, 0, 255, 0.5);
+    object-fit: cover;
+    height: 250px;
+}
+
+.imagens-projeto iframe {
+    width: 23%;
+    border-radius: 5px;
+    height: 250px;
+    border: none;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #121230;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: #fff;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #5500ff;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #5500ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card .btn:hover {
+    background: #7a3bff;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #ff0000;
+}
+
+.hero .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.avatar img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #5500ff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.texto h1, 
+.texto h2, 
+.texto p {
+    text-align: left;
+}
+
+/* Estilos para a seção novo início (ex-seção Sobre) */
+.sobre-mim {
+    position: relative;
+    padding: 100px 20px;
+    background-color: #0a0a23;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cracha-container {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    z-index: 1;
+}
+
+.cordinha {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 3px;
+    height: 0; /* Começa com altura 0 */
+    background-color: #5500ff;
+    transform: translateX(-50%);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cracha {
+    background-color: #121230;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(85, 0, 255, 0.5);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cracha img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info-cracha h3 {
+    color: #5500ff;
+    margin-bottom: 5px;
+}
+
+.texto-sobre {
+    max-width: 800px;
+    margin: 40px auto 0;
+    text-align: left;
+    color: #fff;
+}
+
+.texto-sobre h2 {
+    color: #5500ff;
+    margin-bottom: 20px;
+}
+
+@keyframes desenrolar {
+    0% {
+        height: 0;
+        transform: translateX(-50%) rotate(0deg);
+    }
+    25% {
+        height: 25px;
+        transform: translateX(-60%) rotate(-15deg); /* Aumentei a distorção lateral */
+    }
+    50% {
+        height: 50px;
+        transform: translateX(-40%) rotate(15deg); /* Aumentei a distorção lateral */
+    }
+    75% {
+        height: 75px;
+        transform: translateX(-60%) rotate(-15deg); /* Aumentei a distorção lateral */
+    }
+    100% {
+        height: 100px;
+        transform: translateX(-50%) rotate(0deg);
+    }
+}
+
+@keyframes balancar {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+.cordinha.visivel {
+    opacity: 1;
+    animation: desenrolar 1s ease-in-out forwards, balancar 2s ease-in-out 1s infinite;
+}
+
+.cracha.visivel {
+    opacity: 1;
+    transform: translateY(0);
+    animation: balancar 2s ease-in-out 1s infinite; /* Atraso de 1s */
+    animation-delay: 1s; /* Atraso de 1s para começar após a cordinha */
+}
+
+/* Estilos para a seção de formação acadêmica */
+.formacao-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+}
+
+.formacao-principal {
+    background-color: #121230;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(85, 0, 255, 0.5);
+}
+
+.formacao-principal h3 {
+    color: #5500ff;
+    margin-bottom: 10px;
+}
+
+.formacao-principal p {
+    margin-bottom: 5px;
+}
+
+.cursos-complementares {
+    background-color: #121230;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(85, 0, 255, 0.5);
+}
+
+.cursos-complementares h4 {
+    color: #5500ff;
+    margin-bottom: 15px;
+}
+
+.cursos-complementares ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cursos-complementares ul li {
+    margin-bottom: 15px;
+}
+
+.cursos-complementares ul li strong {
+    color: #5500ff;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Robson Souza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- NOVO INÍCIO (Antiga seção Sobre) -->
+    <section id="inicio" class="sobre-mim">
+        <div class="cracha-container">
+            <div class="cordinha"></div>
+            <div class="cracha">
+                <img src="img/foto.png" alt="Foto do Robson Souza">
+                <div class="info-cracha">
+                    <h3>Robson Souza</h3>
+                    <p>Desenvolvedor de Sistemas</p>
+                </div>
+            </div>
+        </div>
+        <div class="texto-sobre">
+            <h2>Sobre</h2>
+            <p>
+                Sou um desenvolvedor de sistemas formado pela ETEC, autodidata com experiência adquirida através de estudos, 
+                criando soluções e produtos digitais significativos que equilibram as necessidades dos usuários e os objetivos de negócios.
+            </p>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO SOBRE (Formação Acadêmica) -->
+    <section id="sobre" class="sobre-mim">
+        <div class="texto-sobre">
+            <h2>Formação Acadêmica</h2>
+            <div class="formacao-container">
+                <div class="formacao-principal">
+                    <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                    <p>ETEC Lauro Gomes</p>
+                    <p>Conclusão em 06/2024 | Carga horária: 1200 horas</p>
+                </div>
+                <div class="cursos-complementares">
+                    <h4>Cursos Complementares</h4>
+                    <ul>
+                        <li>
+                            <strong>Curso de Java Online</strong> - Rocketseat<br>
+                            Conclusão em 10/23 | Carga horária: 5 horas
+                        </li>
+                        <li>
+                            <strong>Curso de Análise de Dados com Python</strong> - Instituto Eldorado TIC em Trilhas<br>
+                            Conclusão em 11/24 | Carga horária: 24 horas
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <div class="container-botoes">
+                    <a class="btn">Imagens do projeto</a>
+                    <a href="doc.pdf" download="Documentacao_Projeto.pdf" class="btn">
+                        <img src="img/icone_download_google_fonts.svg" alt="Ícone GitHub" class="icone-github">
+                        Documentação do projeto
+                    </a>
+                </div>
+                <div class="imagens-projeto">
+                    <img src="img/principal.png" alt="Projeto 1 Imagem 1">
+                    <img src="img/entrega.png" alt="Projeto 1 Imagem 2">
+                    <img src="img/categorias.png" alt="Projeto 1 Imagem 3">
+                    <img src="img/favoritos.png" alt="Projeto 1 Imagem 4">
+                    <iframe src="doc.pdf" class="pdf-viewer"></iframe>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>Descrição do Projeto</h3>
+                        <p>
+                            Desenvolvido como Trabalho de Conclusão de Curso (TCC) na ETEC Lauro Gomes, 
+                            este aplicativo facilita a experiência de compras em supermercados;
+                            Com uma interface intuitiva, o app visa otimizar o tempo dos usuários e proporcionar economia, 
+                            tornando as compras mais práticas e eficientes.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Tecnologias Utilizadas</h3>
+                        <p>
+                            Java, VIACEP, Firebase, x10Hosting.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Links úteis</h3>
+
+                        <a href="https://github.com/seu-usuario/projeto1" class="btn" target="_blank">
+                            Repositório GitHub
+                            <img src="img/icone_github_branco.svg" alt="Ícone GitHub" class="icone-github">
+                        </a>
+
+                        <a href="https://www.amazon.com.br/Robson-Souza-Mercado-Click/dp/B0DX8HZGSW/ref=mp_s_a_1_1?crid=25CFOAUY61R1O&dib=eyJ2IjoiMSJ9.iAXf3N0tbYoNA7R91P9QIbCGJCLcaL7OlK-d9P000L6xLHtVOtkSbcb6jyEQxY7mYxJsPF9oXqYwwTAXStKt1Jm-sDM-ZaSDF8n8R5r3jqKnz16PK_Dl2AHIbIAN1lhl_WUDgnHKGQzjSNQxIqHyMjdpBoRUIDaG6VxJojAdmnqyCxdj17yecWi9mMqVra13wvuba3qIxNvG1exgF-ndzg.YziYTsFjmvT2ZX_bwqnjzLwlaSDZ2N5V_-q1UQiJh9I&dib_tag=se&keywords=mercado+click&qid=1739804793&sprefix=mercado+click%2Caps%2C337&sr=8-1" class="btn" target="_blank">
+                            Amazon App Store
+                            <img src="img/icone_amazon_branco.svg" alt="Ícone GitHub" class="icone-github">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
